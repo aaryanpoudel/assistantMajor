@@ -1,0 +1,5 @@
+    def update_user(self,str):
+        self.user.setText(str)
+
+    def update_arya(self,str1):
+        self.arya.setText(str1)

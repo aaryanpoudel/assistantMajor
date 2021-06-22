@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>ui/chatbot assests/tenor.gif</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>

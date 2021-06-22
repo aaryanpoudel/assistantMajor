@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AI assistant</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>10</number>
+    </property>
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="dropShadowFrame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+background-color: qlineargradient(spread:pad, x1:0, y1:0.517, x2:1, y2:0.5, stop:0 rgba(255, 238, 252, 255), stop:0.9375 rgba(255, 101, 183, 255));
+	color: rgb(255, 248, 254);
+border-radius: 10px;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>400</y>
+         <width>721</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Nirmala UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+	border-style:none;
+	border-radius:20px;
+	text-align:centre;
+}
+
+QProgressBar::chunk{
+
+	
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0.517, x2:1, y2:0.5, stop:0 rgba(0, 45, 144, 255), stop:0.9375 rgba(85, 255, 255, 255));
+	border-radius:20px;	
+	color: rgb(202, 203, 255);
+}</string>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignBottom|Qt::AlignJustify</set>
+       </property>
+       <property name="textVisible">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="textDirection">
+        <enum>QProgressBar::TopToBottom</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labeltitle">
+       <property name="geometry">
+        <rect>
+         <x>-4</x>
+         <y>82</y>
+         <width>781</width>
+         <height>141</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>36</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 58, 184);</string>
+       </property>
+       <property name="text">
+        <string>&lt;Strong&gt;AI&lt;/Strong&gt; Assistant</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelarya">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>180</y>
+         <width>791</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>36</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 45, 144);</string>
+       </property>
+       <property name="text">
+        <string>&lt;Strong&gt;ARYA</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelloading">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>450</y>
+         <width>791</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 45, 144);</string>
+       </property>
+       <property name="text">
+        <string>Loading...</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelcreator">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>520</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 108, 187);
+color: rgb(0, 45, 144);</string>
+       </property>
+       <property name="text">
+        <string>&lt;Strong&gt;Created by:&lt;/Strong&gt; KEC BCT 73</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
